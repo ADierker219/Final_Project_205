@@ -1,1 +1,17 @@
-/* it is totally okay for this to be completely empty right now, add what you need */
+html,
+body,
+#map {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#text {
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  z-index: 2;
+  font-family: Arial;
+  color: black;
+}
