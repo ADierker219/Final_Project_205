@@ -23,7 +23,7 @@ require([
         title: "Here Be the TITLE",
         description: "And some info about this thing like the Grid Code = {GRIDCODE}"
     });
-    ;
+
     var featureLayer2 = new FeatureLayer("https://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/final_2012/FeatureServer/0",{
         infoTemplate: popupTemplate
     });
@@ -31,7 +31,13 @@ require([
     map.addLayer(featureLayer2);
 
     //Imagery Wet Year 2015
-    var featureLayer3 = new FeatureLayer("https://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/final_2015/FeatureServer/0"); 
+    var popupTemplate2015 = new PopupTemplate({
+        title: "Imagery Wet Year 2015",
+        description: "And some info about this thing like the Grid Code = {GRIDCODE}"
+    });
+    var featureLayer3 = new FeatureLayer("https://services.arcgis.com/YseQBnl2jq0lrUV5/arcgis/rest/services/final_2015/FeatureServer/0", {
+        infoTemplate: popupTemplate2015   
+    }); 
 
     map.addLayer(featureLayer3);
 
